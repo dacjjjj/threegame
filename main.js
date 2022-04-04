@@ -102,7 +102,7 @@ animate()
 
 function worldGeneration() {
     const grassPlane = new THREE.BoxGeometry(1)
-    const grassTextureLoader = new THREE.TextureLoader().load( "/textures/grasstexture.png" );
+    const grassTextureLoader = new THREE.TextureLoader().load( "textures/grasstexture.png" );
     const grassTexture = new THREE.MeshLambertMaterial({map: grassTextureLoader});
 
     const floor = new THREE.Group();
@@ -122,7 +122,7 @@ function worldGeneration() {
 
 function generateTrees() {
     const trunkGeometry = new THREE.BoxGeometry(1, 5, 1)
-    const treeTrunkTextureLoad = new THREE.TextureLoader().load( "/textures/treetrunktexture.png" );
+    const treeTrunkTextureLoad = new THREE.TextureLoader().load( "textures/treetrunktexture.png" );
     const treetrunktexture = new THREE.MeshLambertMaterial({map: treeTrunkTextureLoad});
   
     const trees = new THREE.Group();
@@ -212,7 +212,7 @@ function characterGeneration() {
     // }
 
     const playerGeometry = new THREE.BoxGeometry(1,1,1)
-    const playerTextureLoader = new THREE.TextureLoader().load( "/textures/sartorius.png" );
+    const playerTextureLoader = new THREE.TextureLoader().load( "textures/sartorius.png" );
     const playerTexture = new THREE.MeshLambertMaterial({map: playerTextureLoader});
 
     player = new THREE.Mesh(playerGeometry, playerTexture)
